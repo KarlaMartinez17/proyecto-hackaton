@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function() {
     var apiKey = "Or5al7f1CgXYK7AwGfbpH9sFH0viHQs6"; //Aplicacion Ticket Master
     
@@ -68,3 +69,17 @@ function escapeHtml(str) {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
 }*/
+=======
+$(document).ready(function(){
+
+     setTimeout(function () {
+    $('#splash').fadeOut(500);
+}, 2000);
+
+
+    $('.modal').modal();
+  });
+ 
+
+ 
+>>>>>>> upstream/master

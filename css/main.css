@@ -1,0 +1,70 @@
+/*splashscreen*/
+
+.intro {
+    background-image: url("../assets/image/splash.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+   }
+   
+   .mainLogo {
+    position: relative;
+    left: 0%;
+    margin-top: 189px;
+    width: 79%;
+   }
+   
+   #splashFooter {
+    background-color: #140212;
+    color: white;
+    margin-top: 279px;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+   }
+
+.bg-login{
+    background-image: url("../assets/image/festival-musica.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+img.responsive-img{
+    max-width: 20%;
+  }
+ 
+  /*FORMATOS DEL LOGIN*/
+
+  main div form {
+    border: 3px solid #2992a7;
+    border-radius: 5%;
+    background-color: white;
+    margin: 100px;
+  }
+ 
+  header div img {
+    width: 80%;
+  }
+  .btn{
+    background-color:  #2992a7;
+  }
+  header h2{
+    font-family: 'Monoton', cursive;
+    font-size:30px;
+    color:#2992a7;
+  }
+  .format-image-claqueta{
+    margin-top: 1em;
+    max-width: 100%;
+  }
+ 
+  @media screen and (min-width:451px){
+     header h2{
+      font-family: 'Monoton', cursive;
+      font-size:50px;
+      color:#2992a7;
+      text-align: center;
+     }
+    }
