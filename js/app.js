@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
      setTimeout(function () {
-    $('#splash').fadeOut(500);
+    $('#splash').hide(500);
+    $('.bg-login').removeClass('hide');
 }, 2000);
 
 
