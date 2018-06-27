@@ -1,0 +1,5 @@
+# Festival de música.
+
+Un festival de música es un tipo de festival o evento social que trata de aglutinar una gran cantidad de conciertos de música durante varios días y generalmente del mismo género musical, de este modo los asistentes al festival pueden pasar varios días disfrutando de música en directo. En estos festivales se suelen realizar otras actividades alternativas relacionadas con la música.
+
+![Festival de música]()hola
