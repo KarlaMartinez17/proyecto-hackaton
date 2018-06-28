@@ -1,16 +1,28 @@
+
+/*nav*/
+
 .nav-wrapper{
-    background-image: url("../assets/image/festival-musica.jpg");
+    background-image: url("https://www.okchicas.com/wp-content/uploads/2017/03/Ir-a-conciertos-mejora-tu-salud-2-730x487.jpg");
+}
+#profileCard{
+    background-image: url("http://significadosdelossuenos.net/wp-content/uploads/2017/09/So%C3%B1ar-con-concierto.jpg");
 }
 
+/* imagen del evento*/ 
 #festivalPoster {
     width: 154px;
     margin-top: 10px;
     margin-left: 5px;
    }
    
-   .card .card-title {
-    font-size: 58px;
+.card-title {
+    position: relative;
+    font-size: 30px;
+    color: #1176ad;
+    left: 50%;
+    transform: translateX(-50%);
    }
+
    
    div.userInfo.col.s6 {
     padding-left: 10px;
@@ -18,22 +30,27 @@
    }
    
    .redesi {
+    margin-top: 100px;
     font-size: 50px;
+   }
+
+   .redesi2 {
+    margin-top: 100px;
+    font-size: 50px;
+    color: green;
    }
    
    #profheader {
-    background: linear-gradient(to bottom right, #cc0000 0%, #800000 100%);
+    background: linear-gradient(to bottom right, #00ccbb 0%, #005848 100%);
     color: white;
     font-size: 25px;
     align-items: center;
     height: 45px;
     padding-top: 6px;
     padding-left: 14px;
-   }
-   
-   .userInfo {
     margin-top: 30px;
    }
+  
    
    /*Festival*/
    
@@ -43,11 +60,12 @@
    }
    
    #chicacool{
-    width: 157px;
-    height: 149px;
-    margin-bottom: 92px;
-    margin-left: 24px;
-   }
+    width: 150px;
+    height: 150px;
+    margin-left: 50%;
+    border-radius: 50%;
+}
+   
    
    .festInfo {
    background-color: #181818;
@@ -56,3 +74,61 @@
    .card {
     background-color: #ecefe3;
    }
+
+   footer {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    text-align: center;
+   }
+
+   .socials{
+       position: absolute;
+       top: 75%;
+       left: 20%;
+       transform: translateX(-70%) translateY(-70%);
+   }
+
+   /*template eventos*/
+
+   #artista{
+       font-size:25px;
+       color: teal;
+       font-family: 'Anton', sans-serif;
+       text-decoration-line:underline;
+       text-align: center;
+   }
+
+   .event-text{
+       font-size: 15px;
+       font-family: 'Anton', sans-serif;
+       
+   }
+
+   .parrafos p{
+       text-align: justify;
+       font-size: 20px;
+       padding: 1em;
+   }
+
+   #comprar-boletos{
+       text-align: center;
+   }
+   
+#cancel-button-form{
+    background-color: teal;
+    margin-bottom: 15px;
+    margin-left: 19em;
+}
+
+.logout-button{
+    border: none;
+    color: white;
+    background-color: teal;
+    padding: 9px;
+    font-size: large;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+

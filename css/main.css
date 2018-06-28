@@ -17,16 +17,6 @@
     width: 79%;
    }
    
-   #splashFooter {
-    background-color: #140212;
-    color: white;
-    margin-top: 350px;
-    font-size: 17px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-   }
-
-
    .loader {
     border: 5px solid #f3f3f3;
     border-radius: 50%;

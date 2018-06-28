@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/materialize.min.css">
     <link rel="stylesheet" href="../css/principal.css">
@@ -12,7 +15,6 @@
 </head>
 
 <body>
-
     <nav>
         <ul id="slide-out" class="sidenav">
             <li>
@@ -32,13 +34,16 @@
                 </div>
             </li>
             <li>
-                <a href="#!">Festivales</a>
+                <a href="festivales.html">Festivales</a>
             </li>
             <li>
                 <a href="#!">Agenda</a>
             </li>
             <li>
                 <a class="waves-effect" href="#!">Tus Festivales</a>
+            </li>
+            <li>
+               <button id="logout" type="button" class="logout-button">Log Out</button>
             </li>
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger">
@@ -49,93 +54,122 @@
             <ul class="right hide-on-med-and-down">
                 <li>
                     <a href="sass.html">
-                        <i class="material-icons left">search</i>Link with Left Icon</a>
-                </li>
-                <li>
-                    <a href="badges.html">
-                        <i class="material-icons right">view_module</i>Link with Right Icon</a>
+                        <i class="material-icons left">search</i>Buscar</a>
                 </li>
             </ul>
+            
         </div>
     </nav>
     <section id="#profile" class="container">
-            <div id="profileCard" class="card row">
-                <div class="userInfo col s6">
-                    <img id="chicacool" src="../assets/image/profile.png">
-                </div>
-                <div class="user-info col 6">
-                    <span class="card-title">Ale Torres</span>
-                    <a href=""><i class="redesi fab fa-facebook"></i></a>
-                    <a href=""><i class="redesi fab fa-whatsapp-square"></i></a>
-                 </div>
+        <div id="profileCard" class="card row">
+            <div class="userInfo col s6">
+                <img id="chicacool" src="">
             </div>
-            <!--Agenda-->
-            <h2 id="profheader" class="card">Eventos</h2>
-            <div class="input-field col s12">
-                <select id="optionSelect" >
-                  <option value="" disabled selected>Elige Ciudad</option>
-                  <option value="1">Guadalajara</option>
-                  <option value="2">Monterrey</option>
-                  <option value="3">Ciudad de Mexico</option>
-                </select>
-                <label>Materialize Select</label>
-              </div>
-
-              <div id="eventsgenerals"></div>
-
-
-                  <!--Festival-->
-            <div id="template-content" class="card row agenda festInfo" style="display: none">
-               <div class="col s6">
-                  <img id="festivalPoster" src="{{img}}" alt="">
-               </div>
-               <div class="col s6">
-                  <p>{{eventName}}</p>
-                  <p>{{eventPlace}}</p>
-                  <p>{{date}}</p>
-                  <button id="show-video"><i class="fas fa-plus-circle"></i>Ver Videos</button>
-                  <button id="favorite"><i class="fas fa-plus-circle"></i>ESTRELLITA </button>
-               </div>
-            </div>
-                  <!--Festival-->
-            <div class="card row agenda">
-               <div class="col s6">
-                 <img id="festivalPoster" src="../assets/image/poster2.jpg" alt="">
-               </div>
-               <div class="col s6">
-                 <p>Misteryland: 24 Octubre</p>
-                 <p>Asisten</p>
-                 <p>Susana Moreno</p><p>Alejandro P.</p><p>Jorge Vargas</p>
-                 <button><i class="fas fa-plus-circle"></i></button>
-               </div>
-            </div>
-                  <!--Festival-->
-            <div class="card row agenda">
-                <div class="col s6">
-                    <img id="festivalPoster" src="../assets/image/poster3.jpg" alt="">
-                </div>
-                <div class="col s6">
-                    <p>Sasquatch!: 11 Noviembre</p>
-                    <p>Asisten</p>
-                    <p>Luisa Rodriguez</p><p>Rodrigo Garcia</p><p>Luis Castro</p>
-                    <button><i class="fas fa-plus-circle"></i></button>
+            <div class="user-info col 6">
+                <p id="nombre-perfil" class="card-title"></p>
+                <div class="socials">
+                    <a href="">
+                        <i class="redesi fab fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="redesi2 fab fa-whatsapp-square"></i>
+                    </a>
                 </div>
             </div>
-            <div class="footer-copyright">
-                     <div class="container">
-                     © 2014 Copyright Text
-                     <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-                     </div>
-                   </div>
-           </section>
-           Entrada de mensaje
-           
-           Enviar mensaje a @Dayra Álvarez
+        </div>
+        <!--Agenda-->
+        <h2 id="profheader" class="card">Eventos</h2>
+        <div class="input-field col s12">
+            <select id="optionSelect">
+                <option value="" disabled selected>Elige tú Ciudad</option>
+                <option value="1">Guadalajara</option>
+                <option value="2">Monterrey</option>
+                <option value="3">Ciudad de Mexico</option>
+            </select>
+        </div>
+        <div id="eventsgenerals"></div>
 
+        <!--Festival-->
 
+        <div id="template-content" class="card row agenda festInfo" style="display: none">
+            <div class="col s12">
+                <img id="festivalPoster" src="{{img}}" alt="">
+                <br>
+                <a id="artista" onclick="rescueValueModal()" class="modal-trigger prueba" href="#modal1">{{eventName}}</a>
+                <p class="hide-on-med-and-down" id="nameEventsButton">{{eventId}}</p>
+                <p class="event-text">{{eventPlace}}</p>
+                <p class="event-text">{{date}}</p>
+                <button onclick="videos()">
+                    <i class="material-icons">ondemand_video</i>
+                </button>
+                <button id="favorite">
+                    <i class="material-icons">star</i>
+                </button>
+            </div>
+        </div>
+        <!--Festival-->
+        <div class="card row agenda">
+            <div class="col s6">
+                <img id="festivalPoster" src="../assets/image/poster2.jpg" alt="">
+            </div>
+            <div class="col s6">
+                <p>Misteryland: 24 Octubre</p>
+                <p>Asisten</p>
+                <p>Susana Moreno</p>
+                <p>Alejandro P.</p>
+                <p>Jorge Vargas</p>
+                <button>
+                    <i class="fas fa-plus-circle"></i>
+                </button>
+            </div>
+        </div>
+        <!--Festival-->
+        <div class="card row agenda">
+            <div class="col s6">
+                <img id="festivalPoster" src="../assets/image/poster3.jpg" alt="">
+            </div>
+            <div class="col s6">
+                <p>Sasquatch!: 11 Noviembre</p>
+                <p>Asisten</p>
+                <p>Luisa Rodriguez</p>
+                <p>Rodrigo Garcia</p>
+                <p>Luis Castro</p>
+                <button>
+                    <i class="fas fa-plus-circle"></i>
+                </button>
+            </div>
+        </div>
+        <!--Modal MAS INFORMACION EVENTO-->
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+
+                <div id="template-modal2" class="card row agenda festInfo">
+                    <div class="parrafos col s8">
+                        <p>{{eventName}}</p>
+                        <img id="festivalPoster" src="{{img}}" alt="">
+                        <p class="hide-on-med-and-down">{{eventId}}</p>
+                        <p>{{eventPlace}}</p>
+                        <p>{{date}}</p>
+                        <p>{{time}}</p>
+                        <p>{{info}}</p>
+                        <a id="comprar-boletos" href='{{url}}' about='_blank'>Comprar Boletos</a>
+                        <p>{{direction}}</p>
+                    </div>
+                    <button id="cancel-button-form" href="principal.html" class="modal-close waves-effect waves-green btn-flat">Close</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Festival On! 2018 ©</p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="../js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script type="text/javascript" src="../js/firebase.js"></script>
     <script src="../js/principal.js"></script>
 </body>
 
