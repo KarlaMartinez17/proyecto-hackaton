@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(document).ready(function() {
     var apiKey = "Or5al7f1CgXYK7AwGfbpH9sFH0viHQs6"; //Aplicacion Ticket Master
     
@@ -11,7 +10,7 @@ $(document).ready(function() {
 
         $.ajax({
             type:"GET",
-            url:"http://app.ticketmaster.com/discovery/v2/events/G5diZfkn0B-bh.json?apikey=Or5al7f1CgXYK7AwGfbpH9sFH0viHQs6"+search,
+            url:"//app.ticketmaster.com/discovery/v2/events.json?apikey=Or5al7f1CgXYK7AwGfbpH9sFH0viHQs6&city=zapopan"+search,
             async:true,
             dataType: "json",
             success: function(json) {
@@ -69,7 +68,6 @@ function escapeHtml(str) {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
 }*/
-=======
 $(document).ready(function(){
 
      setTimeout(function () {
@@ -82,4 +80,3 @@ $(document).ready(function(){
  
 
  
->>>>>>> upstream/master
