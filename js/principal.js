@@ -59,9 +59,3 @@ function escapeHtml(str) {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
 }
-
-$("#show-video").click(function(){
-    var 
-    window.location.href("video.html");
-
-})
