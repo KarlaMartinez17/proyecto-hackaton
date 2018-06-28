@@ -70,17 +70,31 @@
                  </div>
             </div>
             <!--Agenda-->
-            <h2 id="profheader" class="card">Agenda</h2>
+            <h2 id="profheader" class="card">Eventos</h2>
+            <div class="input-field col s12">
+                <select id="optionSelect" >
+                  <option value="" disabled selected>Elige Ciudad</option>
+                  <option value="1">Guadalajara</option>
+                  <option value="2">Monterrey</option>
+                  <option value="3">Ciudad de Mexico</option>
+                </select>
+                <label>Materialize Select</label>
+              </div>
+
+              <div id="eventsgenerals"></div>
+
+
                   <!--Festival-->
-            <div id="#festInfo" class="card row agenda">
+            <div id="template-content" class="card row agenda festInfo" style="display: none">
                <div class="col s6">
-                  <img id="festivalPoster" src="../assets/image/poster1.jpg" alt="">
+                  <img id="festivalPoster" src="{{img}}" alt="">
                </div>
                <div class="col s6">
-                  <p>Wolf Island: 22 de Julio</p>
-                  <p>Asisten</p>
-                  <p>Sergio Hdz</p><p>Adriana Perez</p><p>Ana Jimenez</p>
-                  <button><i class="fas fa-plus-circle"></i></button>
+                  <p>{{eventName}}</p>
+                  <p>{{eventPlace}}</p>
+                  <p>{{date}}</p>
+                  <button id="show-video"><i class="fas fa-plus-circle"></i>Ver Videos</button>
+                  <button id="favorite"><i class="fas fa-plus-circle"></i>ESTRELLITA </button>
                </div>
             </div>
                   <!--Festival-->
