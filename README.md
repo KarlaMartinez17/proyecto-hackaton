@@ -9,4 +9,4 @@ Un festival de música es un tipo de festival o evento social que trata de aglut
 Organizar un evento masivo siempre implica una gran tarea.
 Un festival de música no es la excepcion, es un reto enorme tanto para los administradores, organizadores y expectadores 
 
-"nombre de la app" 
+Festival On! Es una propuesta unica e increible  
