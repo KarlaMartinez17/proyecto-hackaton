@@ -1,15 +1,18 @@
 /*splashscreen*/
 
 .intro {
-    background-image: url("../assets/image/splash.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-   }
+  background-image: url("../assets/image/splash.gif");
+  text-align: center;
+  height:100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+
+ }
    
    .mainLogo {
     position: relative;
-    left: 0%;
+    left: 0;
     margin-top: 189px;
     width: 79%;
    }
@@ -17,11 +20,39 @@
    #splashFooter {
     background-color: #140212;
     color: white;
-    margin-top: 279px;
+    margin-top: 350px;
     font-size: 17px;
     padding-top: 10px;
     padding-bottom: 5px;
    }
+
+
+   .loader {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #1a95b4;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 80%;
+    left: 48%;
+    transform: translateX(-48%) translateY(80%);
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+   /*aqui termina vista splash*/
 
 .bg-login{
     background-image: url("../assets/image/festival-musica.jpg");
@@ -68,3 +99,5 @@ img.responsive-img{
       text-align: center;
      }
     }
+
+   
