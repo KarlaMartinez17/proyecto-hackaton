@@ -6,18 +6,22 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Document</title>
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <link rel="stylesheet" href="css/materialize.min.css">
+   <link rel="stylesheet" href="../css/materialize.min.css">
+   <link rel="stylesheet" href="../css/video.css">
 
 </head>
 <body>
-       <a class="waves-effect waves-light btn" href="principal.html">Regresar</a>
+    <div>
+        <a class="waves-effect waves-light btn" href="principal.html">Regresar</a>
+    </div>
+       
 
-     <div id="video-container" class="container"></div>
+     <div id="video-container" class="container center-align"></div>
 
-     <div id="template-video">
+    <div id="template-video" class="center-align">
 
-     <iframe src="https://www.youtube.com/embed/{{videoId}}" frameborder="0" style="width: 70vw"></iframe>
-   </div>
+      <iframe src="https://www.youtube.com/embed/{{videoId}}" frameborder="0" style="width: 70vw"></iframe>
+    </div>
 
    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
    crossorigin="anonymous"></script>

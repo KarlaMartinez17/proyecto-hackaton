@@ -1,18 +1,24 @@
 
 /*nav*/
+nav .brand-logo {
+    text-shadow: 0px 0px 10px #000;
+    font-weight: bold;
+}
 
 .nav-wrapper{
-    background-image: url("https://www.okchicas.com/wp-content/uploads/2017/03/Ir-a-conciertos-mejora-tu-salud-2-730x487.jpg");
+    background-color: #3c8978;
 }
 #profileCard{
     background-image: url("http://significadosdelossuenos.net/wp-content/uploads/2017/09/So%C3%B1ar-con-concierto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* imagen del evento*/ 
 #festivalPoster {
     width: 154px;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 20px;
    }
    
 .card-title {
@@ -30,12 +36,11 @@
    }
    
    .redesi {
-    margin-top: 100px;
     font-size: 50px;
+    margin-right: 5px;
    }
 
    .redesi2 {
-    margin-top: 100px;
     font-size: 50px;
     color: green;
    }
@@ -83,10 +88,13 @@
    }
 
    .socials{
-       position: absolute;
-       top: 75%;
-       left: 20%;
-       transform: translateX(-70%) translateY(-70%);
+    position: absolute;
+    left: 30px;
+    bottom: -3px;
+    background: white;
+    padding: 5px 20px 4px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
    }
 
    /*template eventos*/
@@ -113,12 +121,13 @@
 
    #comprar-boletos{
        text-align: center;
+       margin-left: 20px;
    }
    
 #cancel-button-form{
     background-color: teal;
     margin-bottom: 15px;
-    margin-left: 19em;
+    color: white;
 }
 
 .logout-button{
@@ -128,7 +137,13 @@
     padding: 9px;
     font-size: large;
     border-radius: 5px;
-    margin-left: 50px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.event-card {
+    background-color: #e6e5e5;
+    padding: 10px 46px;
+    border-radius: 10px;
+    margin: 24px 0;
 }
 
